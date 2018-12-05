@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "skeletons": "/components/skeletons/index"
+  }
+}

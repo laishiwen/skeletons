@@ -1,0 +1,18 @@
+<view wx:if="{{hide}}" class="skeletons-container {{show ? 'show' : ''}}" style="width:{{stystem_info_sync.width}}px;height:{{stystem_info_sync.height}}px;left:{{stystem_info_sync.left}}px;top:{{stystem_info_sync.top}};background:{{background}}">
+  <block wx:if="{{rect_list.length}}">
+    <view wx:for="{{rect_list}}" wx:key="{{index}}" class="skeletons-rect skeletons-graph {{block_animation}}" style="width:{{item.width}}px;height:{{item.height}}px;left:{{item.left}}px;top:{{item.top}}px;"></view>
+  </block>
+  <block wx:if="{{circle_list.length}}">
+    <view wx:for="{{circle_list}}" wx:key="{{index}}" class="skeletons-circle skeletons-graph {{block_animation}}" style="width:{{item.width}}px;height:{{item.height}}px;left:{{item.left}}px;top:{{item.top}}px;border-radius:{{item.width}}px;"></view>
+  </block>
+  <block wx:if="{{is_loading}}">
+    <block wx:if="{{loading === 'spin'}}">
+      <view class="spin-box">
+        <view class="spin"></view>
+      </view>
+    </block>
+    <block wx:if="{{loading === 'music'}}">
+    <view class="music"></view>
+    </block>
+  </block>
+</view>

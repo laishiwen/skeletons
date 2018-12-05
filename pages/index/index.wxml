@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container skeletons">
+  <view class="author skeletons-circle">
+    Titan_star
+  </view>
+  <view class="skeletons-rect">
+    <text>
+      小程序骨架屏动态注入组件
+    </text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto skeletons-rect">Hello skeletons</text>
+  </view>
+</view>
+
+<skeletons loading="music" block_animation="shine" is_complete="{{is_complete}}" is_capture_nodes="{{is_capture_nodes}}"></skeletons> 
