@@ -67,16 +67,15 @@
 </div>
 
 <br/>
-<br/>
 
-|节点类|备注|
+|节点类|备注|
 |-|-|
 |skeletons-rect|正方形|
 |skeletons-circle|圆形|
 |skeletons-...|陆续开放|
 
 <br/>
-<br/>
+
 
 >列举案例的使用方法，老司机喵一眼就懂～
 
@@ -141,7 +140,7 @@
 ##contact
 <img src="./qrcode.jpg" width=150 alt=“wechat”/>
 
-> `组件的功能还有许多的不足可以优化，也欢迎小伙伴有更好的建议issues提交`
+- 组件的功能还有许多的不足可以优化，也欢迎小伙伴有更好的建议issues提交
 
 
 ##License
