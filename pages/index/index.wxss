@@ -16,18 +16,38 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
+.author{
+    color:#fff;
+    font-size: 32rpx;
+    line-height: 200rpx;
+    position: absolute;
+    z-index: 99;
 }
 
-.author{
+.usermotto {
+  margin-top: 300px;
+}
+
+.circle{
   width:200rpx;
   height:200rpx;
-  line-height: 200rpx;
   border-radius: 100%;
-  background: #111;
-  margin:30rpx auto;
-  font-size: 32rpx;
+  margin:auto;
   text-align: center;
-  color:#fff;
+  background: #FF0099;
+  background-image: linear-gradient(-225deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 40%, rgba(0, 255, 255, 0) 60%, #0ff 100%), linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+  box-shadow: -30vmin 10vmin 0 -30rpx rgba(0, 0, 0, 0.07) , 30vmin -10vmin 0 -40rpx rgba(0, 0, 0, 0.07);
+  animation: rotate 60s  infinite;
+  will-change: transform;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0turn);
+    box-shadow: -30vmin 10vmin 0 -30rpx rgba(0, 0, 0, 0.07) , 30vmin -10vmin 0 -40rpx rgba(0, 0, 0, 0.07);
+  }
+  to{
+    transform: rotate(10turn);
+    box-shadow: 30vmin -10vmin 0 -40rpx rgba(0, 0, 0, 0.07),-30vmin 10vmin 0 -30rpx rgba(0, 0, 0, 0.07);
+  }
 }

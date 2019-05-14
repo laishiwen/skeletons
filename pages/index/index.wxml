@@ -1,12 +1,7 @@
 <!--index.wxml-->
 <view class="container skeletons">
-  <view class="author skeletons-circle">
-    Titan_star
-  </view>
-  <view class="skeletons-rect">
-    <text>
-      小程序骨架屏动态注入组件
-    </text>
+  <text class="author">Sven</text>
+  <view class="circle skeletons-circle">
   </view>
   <view class="usermotto">
     <text class="user-motto skeletons-rect">Hello skeletons</text>

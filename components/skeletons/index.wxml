@@ -1,4 +1,4 @@
-<view wx:if="{{hide}}" class="skeletons-container {{show ? 'show' : ''}}" style="width:{{stystem_info_sync.width}}px;height:{{stystem_info_sync.height}}px;left:{{stystem_info_sync.left}}px;top:{{stystem_info_sync.top}};background:{{background}}">
+<view wx:if="{{hide}}" class="skeletons-container {{show ? 'show' : ''}}" style="width:100%;height:{{system_info_sync.height}}px;left:{{system_info_sync.left}}px;top:{{system_info_sync.top}};background:{{background}}">
   <block wx:if="{{rect_list.length}}">
     <view wx:for="{{rect_list}}" wx:key="{{index}}" class="skeletons-rect skeletons-graph {{block_animation}}" style="width:{{item.width}}px;height:{{item.height}}px;left:{{item.left}}px;top:{{item.top}}px;"></view>
   </block>
@@ -12,7 +12,12 @@
       </view>
     </block>
     <block wx:if="{{loading === 'music'}}">
-    <view class="music"></view>
+      <view class="music"></view>
+    </block>
+    <block wx:if="{{loading === 'xizi'}}">
+      <view class="xizi_clound_loading" style="">
+        <image mode='widthFix' src="{{component['icon_load']}}"></image>
+      </view>
     </block>
   </block>
 </view>
